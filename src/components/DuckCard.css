@@ -12,11 +12,11 @@
   transition: transform 0.5s;
 }
 
-.frontFace {
-  /* background-image: url(/src/assets/CyberQuack.png);
+/* .frontFace {
+  background-image: url(/src/assets/CyberQuack.png);
     background-size: contain;
-    border-radius: 10px; */
-}
+    border-radius: 10px;
+} */
 
 .backFace {
   /* background-image: url(/src/assets/babyDuck.png);
