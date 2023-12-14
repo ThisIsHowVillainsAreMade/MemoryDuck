@@ -3,7 +3,7 @@ import "./DuckCard.css";
 import duckPictures from "../duckPicsData";
 import CyberQuack from "../assets/CyberQuack.png";
 
-function DuckCard({ frontImage, backImage }) {
+function DuckCard({ duck }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -16,13 +16,13 @@ function DuckCard({ frontImage, backImage }) {
           //   Face avant contenant le logo.
           className={`cardFace ${isFlipped ? "backFace" : "frontFace"}`}
         >
-          <img src= {CyberQuack} alt={frontImage.name} />
+          <img src={CyberQuack} alt={duck.name} />
         </div>
         <div
           //   Face arrière contenant le canard.
           className={`cardFace ${isFlipped ? "frontFace" : "backFace"}`}
         >
-          <img src={duckPictures[1].imgSrc} alt={backImage.name} />
+          <img src={duck.imgSrc} alt={duck.name} />
         </div>
       </div>
     </>

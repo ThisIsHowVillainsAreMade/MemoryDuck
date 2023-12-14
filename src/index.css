@@ -1,4 +1,14 @@
+:root {
+  --bgColor: black;
+  --textColor: white;
+  --border: white;
+}
+
 body {
   margin: 0;
   background-color: #b4afaf;
+}
+
+#root {
+  min-height: 100svh;
 }

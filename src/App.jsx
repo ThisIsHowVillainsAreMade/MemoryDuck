@@ -1,20 +1,12 @@
-import { useState } from "react";
 import "./App.css";
 import "./components/DuckCard";
-import DuckCard from "./components/DuckCard";
+import DuckContainer from "./components/DuckContainer";
 import duckPictures from "./duckPicsData";
 
 function App() {
-  const [duckIndex, setDuckIndex] = useState(1);
-
   return (
     <>
-      <div>
-        <DuckCard
-          frontImage={duckPictures[0]}
-          backImage={duckPictures[duckIndex]}
-        />
-      </div>
+      <DuckContainer duckPictures={duckPictures} />
     </>
   );
 }
