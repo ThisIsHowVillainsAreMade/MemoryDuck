@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./DuckCard.css";
-import duckPictures from "../duckPicsData";
 import CyberQuack from "../assets/CyberQuack.png";
 
 function DuckCard({ duck }) {

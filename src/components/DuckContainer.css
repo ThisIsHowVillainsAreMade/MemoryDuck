@@ -2,5 +2,5 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
-  height: 100svh;
+  height: 100%;
 }
