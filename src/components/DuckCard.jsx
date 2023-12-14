@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./DuckCard.css";
 import duckPictures from "../duckPicsData";
+import CyberQuack from "../assets/CyberQuack.png";
 
 function DuckCard({ frontImage, backImage }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -8,7 +9,6 @@ function DuckCard({ frontImage, backImage }) {
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
   };
-  console.log(duckPictures[0].imgSrc);
   return (
     <>
       <div className="card" onClick={handleFlip}>
@@ -16,7 +16,7 @@ function DuckCard({ frontImage, backImage }) {
           //   Face avant contenant le logo.
           className={`cardFace ${isFlipped ? "backFace" : "frontFace"}`}
         >
-          <img src={duckPictures[0].imgSrc} alt={frontImage.name} />
+          <img src= {CyberQuack} alt={frontImage.name} />
         </div>
         <div
           //   Face arrière contenant le canard.

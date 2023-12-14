@@ -9,13 +9,22 @@
 .cardFace {
   width: 100%;
   height: 100%;
+  min-height: 170px;
+  min-width: 170px;
   position: absolute;
   backface-visibility: hidden;
   transition: transform 0.5s;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  border-radius: 10px;
 }
 
 .cardFace img {
-  width: 100%;
+  width: 95%;
+  border-radius: 10px;
 }
 
 .backFace {
