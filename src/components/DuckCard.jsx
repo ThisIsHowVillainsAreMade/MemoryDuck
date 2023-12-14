@@ -15,13 +15,19 @@ function DuckCard({ frontImage, backImage }) {
           //   Face avant contenant le logo.
           className={`cardFace ${isFlipped ? "backFace" : "frontFace"}`}
         >
-          <img src={frontImage.imgSrc} alt={frontImage.name} />
+          <img
+            src={frontImage.imgSrc}
+            //   alt={frontImage.name}
+          />
         </div>
         <div
           //   Face arrière contenant le canard.
           className={`cardFace ${isFlipped ? "frontFace" : "backFace"}`}
         >
-          <img src={backImage.imgSrc} alt={backImage.name} />
+          <img
+            src={backImage.imgSrc}
+            //   alt={backImage.name}
+          />
         </div>
       </div>
     </>
