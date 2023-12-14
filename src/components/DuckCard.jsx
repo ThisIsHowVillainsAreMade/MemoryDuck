@@ -16,7 +16,7 @@ function DuckCard({ frontImage, backImage }) {
           className={`cardFace ${isFlipped ? "backFace" : "frontFace"}`}
         >
           <img
-            src={frontImage.imgSrc}
+            src={"./frontImage.imgSrc"}
             //   alt={frontImage.name}
           />
         </div>
@@ -25,7 +25,7 @@ function DuckCard({ frontImage, backImage }) {
           className={`cardFace ${isFlipped ? "frontFace" : "backFace"}`}
         >
           <img
-            src={backImage.imgSrc}
+            src={"./backImage.imgSrc"}
             //   alt={backImage.name}
           />
         </div>

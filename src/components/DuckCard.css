@@ -1,15 +1,34 @@
-.backFace {
-  background-image: url(/src/assets/babyDuck.png);
-  width: 15svh;
-  height: 15svh;
-  background-size: contain;
-  border-radius: 10px;
+.card {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.cardFace {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
 }
 
 .frontFace {
-  background-image: url(/src/assets/CyberQuack.png);
-  width: 15svh;
-  height: 15svh;
+  /* background-image: url(/src/assets/CyberQuack.png);
+    background-size: contain;
+    border-radius: 10px; */
+}
+
+.backFace {
+  /* background-image: url(/src/assets/babyDuck.png);
   background-size: contain;
-  border-radius: 10px;
+  border-radius: 10px; */
+  transform: rotateY(180deg);
+}
+
+.card.flipped .frontFace {
+  transform: rotateY(-180deg);
+}
+
+.card.flipped .backFace {
+  transform: rotateY(0deg);
 }
