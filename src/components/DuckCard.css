@@ -1,0 +1,15 @@
+.backFace {
+  background-image: url(/src/assets/babyDuck.png);
+  width: 15svh;
+  height: 15svh;
+  background-size: contain;
+  border-radius: 10px;
+}
+
+.frontFace {
+  background-image: url(/src/assets/CyberQuack.png);
+  width: 15svh;
+  height: 15svh;
+  background-size: contain;
+  border-radius: 10px;
+}
