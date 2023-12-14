@@ -1,11 +1,14 @@
+import CyberQuack from "./assets/CyberQuack.png";
+import BabyDuck from "./assets/babyDuck.png";
+
 const duckPictures = [
   {
-    name: "background",
-    imgSrc: "assets/CyberQuack.png",
+    name: "MemoryDuck",
+    imgSrc: CyberQuack,
   },
   {
-    name: "duck 1",
-    imgSrc: "assets/babyDuck.png",
+    name: "Baby Duck",
+    imgSrc: BabyDuck,
   },
 ];
 

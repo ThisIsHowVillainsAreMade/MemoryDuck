@@ -1,7 +1,9 @@
 .card {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   perspective: 1000px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
 }
 
 .cardFace {
@@ -12,16 +14,11 @@
   transition: transform 0.5s;
 }
 
-/* .frontFace {
-  background-image: url(/src/assets/CyberQuack.png);
-    background-size: contain;
-    border-radius: 10px;
-} */
+.cardFace img {
+  width: 100%;
+}
 
 .backFace {
-  /* background-image: url(/src/assets/babyDuck.png);
-  background-size: contain;
-  border-radius: 10px; */
   transform: rotateY(180deg);
 }
 
