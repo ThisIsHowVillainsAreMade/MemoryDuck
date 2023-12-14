@@ -7,8 +7,10 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <DuckContainer duckPictures={duckPictures} />
-      <Footer />
+      <div id="cardGame">
+        <DuckContainer duckPictures={duckPictures} />
+        <Footer />
+      </div>
     </>
   );
 }
