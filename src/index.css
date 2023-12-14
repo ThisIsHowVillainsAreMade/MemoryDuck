@@ -12,3 +12,9 @@ body {
 #root {
   min-height: 100svh;
 }
+
+#cardGame {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}

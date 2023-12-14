@@ -1,6 +1,7 @@
-.duckContainer {
+#duckContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 10%;
-  height: 100svh;
+  align-content: flex-start;
+  gap: 2%;
+  margin: 5%;
 }

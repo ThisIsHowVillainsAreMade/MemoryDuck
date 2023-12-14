@@ -6,7 +6,9 @@ import duckPictures from "./duckPicsData";
 function App() {
   return (
     <>
+    <div id="cardGame">
       <DuckContainer duckPictures={duckPictures} />
+      </div>
     </>
   );
 }
