@@ -1,26 +1,26 @@
 import { useState } from "react";
 import "./DuckCard.css";
 import CyberQuack from "../assets/CyberQuack.png";
-
-function DuckCard({ duck }) {
+const ducks =[]
+function DuckCard({duck}) {
   const [isFlipped, setIsFlipped] = useState(false);
 
+  
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
+    ducks.push(duck.id)
+    console.log(ducks);
   };
+
+
+
   return (
     <>
-      <div className="card" onClick={handleFlip}>
-        <div
-          //   Face avant contenant le logo.
-          className={`cardFace ${isFlipped ? "backFace" : "frontFace"}`}
-        >
+      <div className={`card ${isFlipped ? "flipped" : ""}`} onClick={handleFlip}>
+        <div className="cardFace frontFace">
           <img src={CyberQuack} alt={duck.name} />
         </div>
-        <div
-          //   Face arrière contenant le canard.
-          className={`cardFace ${isFlipped ? "frontFace" : "backFace"}`}
-        >
+        <div className="cardFace backFace">
           <img src={duck.imgSrc} alt={duck.name} />
         </div>
       </div>
@@ -29,3 +29,5 @@ function DuckCard({ duck }) {
 }
 
 export default DuckCard;
+
+
