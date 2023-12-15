@@ -8,11 +8,11 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div id="cardGame">
         <Navbar />
+      <div id="cardGame">
         <DuckContainer duckPictures={duckPictures} />
-        <Footer />
       </div>
+        <Footer />
     </>
   );
 }
