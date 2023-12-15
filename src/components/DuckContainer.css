@@ -1,8 +1,17 @@
 #duckContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-content: flex-start;
   gap: 2%;
-  margin: 5%;
-  height: 100svh;
+  margin: 5% auto;
+  height: 100%;
+  width: 80%;
+}
+
+@media screen and (max-width:700px) {
+
+  #duckContainer {
+    width: 100%;
+  }
 }

@@ -36,3 +36,23 @@
 .card.flipped .backFace {
   transform: rotateY(0deg);
 }
+
+
+@media screen and (max-width:600px) {
+
+  .card {
+    height: 100px;
+    width: 100px;
+  }
+
+  .cardFace {
+    min-height: 100px;
+    min-width: 100px;
+
+  }
+
+  .cardFace img {
+    width: 90px;
+    height: 90px;
+  }
+}
