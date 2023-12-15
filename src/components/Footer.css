@@ -1,6 +1,7 @@
 .duckSociety {
-  background-color: var(--navfooter);
-  height: 10%;
+  background-color: var(--Selection);
+  color: var(--Foreground);
+  height: 50px;
   width: 100%;
   margin: 0;
   display: flex;

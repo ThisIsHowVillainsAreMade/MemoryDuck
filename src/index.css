@@ -1,22 +1,30 @@
 :root {
-  /* Couleurs random. Merci de refaire les couleurs et d'insérer le thème D. */
-  --bgColor: black;
-  --navfooter: grey;
-  --textColor: white;
-  --border: white;
+  --Background: #282A36;
+  --Comment: #6272A4;
+  --Selection: #44475A;
+  --Foreground: #F8F8F2;
+
+  --Cyan: #8BE9FD;
+  --Green: #50FA7B;
+  --Orange: #FFB86C;
+  --Pink: #FF79C6;
+  --Purple: #BD93F9;
+  --Red: #FF5555;
+  --Yellow: #F1FA8C;
 }
 
 body {
   margin: 0;
-  background-color: #b4afaf;
+  background-color: var(--Background);
 }
 
 #root {
   min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #cardGame {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
+  min-height: 80svh;
 }
