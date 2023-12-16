@@ -1,0 +1,28 @@
+.aboutUs {
+  color: var(--Foreground);
+}
+
+.aboutUs a {
+  color: var(--Pink);
+}
+
+.aboutUs a:hover {
+  color: var(--Red);
+}
+
+.green {
+  color: var(--Green);
+}
+
+.duckColor {
+  color: var(--Pink);
+}
+
+.societyColor {
+  color: var(--Green);
+}
+
+.aboutSection {
+  margin: 5%;
+  text-justify: justify;
+}

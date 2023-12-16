@@ -9,3 +9,5 @@ function MemoryDuck() {
   );
 }
 export default MemoryDuck;
+
+// EN ATTENTE DES PHOTOS DE CANARD POUR LES CONTACTS.
