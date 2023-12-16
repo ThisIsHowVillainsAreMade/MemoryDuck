@@ -1,3 +1,4 @@
+import { Link, Outlet } from "react-router-dom";
 import "./App.css";
 import "./components/DuckCard";
 import DuckContainer from "./components/DuckContainer";
@@ -38,9 +39,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <div id="cardGame">
+      <main>
+        <MemoryDuck />
+      </main>
+      {/* <div id="cardGame">
         <DuckContainer duckPictures={duckPictures} />
-      </div>
+      </div> */}
       <Footer />
     </>
   );
