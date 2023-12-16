@@ -1,5 +1,6 @@
 import React from "react";
 import DuckCard from "./DuckCard";
+import Chrono from "./Chrono"
 import "./DuckContainer.css";
 
 function shuffleArray(array) {
@@ -20,6 +21,7 @@ function DuckContainer({ duckPictures }) {
       {shuffledDucks.map((duck, indexDuck) => (
         <DuckCard key={indexDuck} duck={duck} />
       ))}
+          <Chrono />
     </div>
   );
 }
