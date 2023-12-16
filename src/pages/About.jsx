@@ -1,4 +1,7 @@
 import "./About.css";
+import Github from "../assets/githubWhite.png";
+import LinkedIn from "../assets/linkedInWhite.png";
+import photoCanardTest from "../assets/CyberQuack.png";
 
 function About() {
   return (
@@ -46,25 +49,66 @@ function About() {
         </p>
       </article>
       <article className="ourLinks">
-        <div className="Océ">
-          <img src="" alt="Océane version canard" id="oceCoin" />
-          <img src="../assets/githubBlack.png" alt="github" />
-          <img src="../assets/linkedInBlack.png" alt="linkedIn" />
+        <div className="oce">
+          <p className="ourNames">Océ</p>
+          <img src={photoCanardTest} alt="Océane version canard" id="oceCoin" />
+          <div className="socialMedias">
+            <a
+              href="https://github.com/ThisIsHowVillainsAreMade"
+              target="_blank"
+            >
+              <img src={Github} alt="github" className="github" />
+            </a>
+            <a href="https://www.linkedin.com/in/oaiw/" target="_blank">
+              <img src={LinkedIn} alt="linkedIn" className="linkedIn" />
+            </a>
+          </div>
         </div>
-        <div className="Flo">
-          <img src="" alt="Florian version canard" id="floCoin" />
-          <img src="../assets/githubBlack.png" alt="github" />
-          <img src="../assets/linkedInBlack.png" alt="linkedIn" />
+        <div className="flo">
+          <p className="ourNames">Flo</p>
+          <img
+            src={photoCanardTest}
+            alt="Florian version canard"
+            id="floCoin"
+          />
+          <div className="socialMedias">
+            <a href="https://github.com/Dolpheus89" target="_blank">
+              <img src={Github} alt="github" className="github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/florian-schaessens-041243a9/"
+              target="_blank"
+            >
+              <img src={LinkedIn} alt="linkedIn" className="linkedIn" />
+            </a>
+          </div>
         </div>
-        <div className="Ryan">
-          <img src="" alt="Ryan version canard" id="ryanCoin" />
-          <img src="../assets/githubBlack.png" alt="github" />
-          <img src="../assets/linkedInBlack.png" alt="linkedIn" />
+        <div className="ryan">
+          <p className="ourNames">Ryan</p>
+          <img src={photoCanardTest} alt="Ryan version canard" id="ryanCoin" />
+          <div className="socialMedias">
+            <a href="https://github.com/RetrozDev" target="_blank">
+              <img src={Github} alt="github" className="github" />
+            </a>
+            {/* <a href="" target="_blank">
+              <img src={LinkedIn} alt="linkedIn" className="linkedIn" />
+            </a> */}
+          </div>
         </div>
-        <div className="Greg">
-          <img src="" alt="Greg version canard" id="gregCoin" />
-          <img src="../assets/githubBlack.png" alt="github" />
-          <img src="../assets/linkedInBlack.png" alt="linkedIn" />
+        <div className="greg">
+          <p className="ourNames">Greg</p>
+          <img src={photoCanardTest} alt="Greg version canard" id="gregCoin" />
+          <div className="socialMedias">
+            <a href={photoCanardTest} target="_blank">
+              <img src={Github} alt="github" className="github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gr%C3%A9gory-d-754664195/"
+              target="_blank"
+            >
+              <img src={LinkedIn} alt="linkedIn" className="linkedIn" />
+            </a>
+          </div>
         </div>
       </article>
     </section>
