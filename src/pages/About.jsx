@@ -20,8 +20,12 @@ function About() {
           </a>
           .
           <br />
-          Passionnés de <a href="https://rezmason.github.io/matrix/"> code </a>,
-          de{" "}
+          Passionnés de{" "}
+          <a href="https://rezmason.github.io/matrix/" target="_blank">
+            {" "}
+            code{" "}
+          </a>
+          , de{" "}
           <a href="https://fr.wikipedia.org/wiki/Malbolge" target="_blank">
             malbolge{" "}
           </a>
