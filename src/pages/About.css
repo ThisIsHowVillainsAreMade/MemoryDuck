@@ -5,7 +5,7 @@
 }
 
 .duckColor {
-  color: var(--Pink);
+  color: var(--Purple);
 }
 
 .societyColor {
@@ -29,6 +29,8 @@
 
 .ourNames {
   color: var(--Foreground);
+  font-size: 1.5rem;
+  line-height: 0.5svh;
   display: flex;
   justify-content: center;
   padding-top: 25% 0 0 0;
@@ -76,4 +78,6 @@ div.socialMedias {
   border-radius: 20px;
   position: relative;
   z-index: 1;
+  /* box-shadow: 10px 10px 17px 1px #c7c7c717; */
+  box-shadow: 10px 10px 17px 1px #110113;
 }
