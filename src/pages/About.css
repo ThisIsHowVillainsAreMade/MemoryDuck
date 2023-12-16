@@ -1,0 +1,83 @@
+/* Partie About & Couleurs Texte */
+
+.green {
+  color: var(--Green);
+}
+
+.duckColor {
+  color: var(--Purple);
+}
+
+.societyColor {
+  color: var(--Green);
+}
+
+/* Partie Photos & Links */
+
+.aboutUs {
+  color: var(--Foreground);
+  margin: 0 7% 0% 7%;
+}
+
+.aboutUs a {
+  color: var(--Pink);
+}
+
+.aboutUs a:hover {
+  color: var(--Red);
+}
+
+.ourNames {
+  color: var(--Foreground);
+  font-size: 1.5rem;
+  line-height: 0.5svh;
+  display: flex;
+  justify-content: center;
+  padding-top: 25% 0 0 0;
+}
+
+.aboutSection {
+  margin: 5%;
+  font-size: 1.5rem;
+  text-justify: justify;
+}
+
+.ourLinks {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div.socialMedias {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  margin: -25% 0 0 0;
+}
+
+.linkedIn,
+.github {
+  height: 4svh;
+  width: 4svw;
+}
+
+.oce img,
+.flo img,
+.ryan img,
+.greg img {
+  object-fit: contain;
+}
+
+#oceCoin,
+#floCoin,
+#ryanCoin,
+#gregCoin {
+  height: 20svh;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  /* box-shadow: 10px 10px 17px 1px #c7c7c717; */
+  box-shadow: 10px 10px 17px 1px #110113;
+}
