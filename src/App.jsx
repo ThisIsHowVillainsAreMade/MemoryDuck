@@ -1,8 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
 import "./App.css";
 import "./components/DuckCard";
-import DuckContainer from "./components/DuckContainer";
-import duckPictures from "./duckPicsData";
+// import DuckContainer from "./components/DuckContainer";
+// import duckPictures from "./duckPicsData";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -40,7 +40,7 @@ function App() {
     <>
       <Navbar />
       <main>
-        <MemoryDuck />
+        <Outlet />
       </main>
       {/* <div id="cardGame">
         <DuckContainer duckPictures={duckPictures} />
