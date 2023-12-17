@@ -32,10 +32,7 @@ function DuckCard({ duck, notMatch }) {
       ducks.length = 0;
     }
   };
-
-
-
-
+  
 
   return (
     <>
