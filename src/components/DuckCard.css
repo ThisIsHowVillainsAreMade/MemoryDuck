@@ -37,6 +37,10 @@
   transform: rotateY(0deg);
 }
 
+.erreurs {
+  color: var(--Foreground)
+}
+
 
 @media screen and (max-width:600px) {
 
