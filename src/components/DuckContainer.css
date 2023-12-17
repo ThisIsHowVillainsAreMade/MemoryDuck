@@ -10,6 +10,11 @@
   max-width: 1400px;
 }
 
+.NbrError {
+  color: var(--Foreground);
+}
+
+
 @media screen and (max-width:700px) {
 
   #duckContainer {

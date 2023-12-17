@@ -1,5 +1,5 @@
-import React from "react";
 import DuckCard from "./DuckCard";
+import React, { useState } from 'react';
 import Chrono from "./Chrono"
 import "./DuckContainer.css";
 
@@ -13,15 +13,19 @@ function shuffleArray(array) {
 }
 
 function DuckContainer({ duckPictures }) {
-  // Mélanger le tableau de manière aléatoire
   const shuffledDucks = shuffleArray([...duckPictures]);
+  const [errors, setErrors] = useState(0);
+  const handleError = () => {
+    setErrors(prevErrors => prevErrors + 1); // Incrémentation du compteur d'erreurs
+  };
 
   return (
-    <div id="duckContainer">
+      <div id="duckContainer">
       {shuffledDucks.map((duck, indexDuck) => (
         <DuckCard key={indexDuck} duck={duck} />
       ))}
-          <Chrono />
+       <Chrono />
+      <div className="NbrError" >Nombre d'erreurs : {errors}</div>
     </div>
   );
 }
