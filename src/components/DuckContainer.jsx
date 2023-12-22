@@ -14,18 +14,18 @@ function shuffleArray(array) {
 
 function DuckContainer({ duckPictures }) {
   const shuffledDucks = shuffleArray([...duckPictures]);
-  const [errors, setErrors] = useState(0);
-  const handleError = () => {
-    setErrors(prevErrors => prevErrors + 1); // Incrémentation du compteur d'erreurs
-  };
+  // const [errors, setErrors] = useState(0);
+  // const handleError = () => {
+  //   setErrors(prevErrors => prevErrors + 1); // Incrémentation du compteur d'erreurs
+  // };
 
   return (
-      <div id="duckContainer">
+    <div id="duckContainer">
       {shuffledDucks.map((duck, indexDuck) => (
         <DuckCard key={indexDuck} duck={duck} />
       ))}
-       <Chrono />
-      <div className="NbrError" >Nombre d'erreurs : {errors}</div>
+      <Chrono />
+      {/* <div className="NbrError" >Nombre d'erreurs : {errors}</div> */}
     </div>
   );
 }

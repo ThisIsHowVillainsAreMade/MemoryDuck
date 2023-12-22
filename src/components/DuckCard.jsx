@@ -5,7 +5,7 @@ import CyberQuack from "../assets/CyberQuack.png";
 
 const ducks = []
 
-function DuckCard({ duck, notMatch }) {
+function DuckCard({ duck }) {
   const [isFlipped, setIsFlipped] = useState(false);
   // const [errors, setErrors] = useState(0);
 
@@ -19,7 +19,7 @@ function DuckCard({ duck, notMatch }) {
 
       if (name1 !== name2) {
         console.log("Les cartes sont différentes");
-        notMatch();
+        //error();
       } else {
         console.log("Les cartes sont les mêmes");
 
@@ -32,7 +32,7 @@ function DuckCard({ duck, notMatch }) {
       ducks.length = 0;
     }
   };
-  
+
 
   return (
     <>
