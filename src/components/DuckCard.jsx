@@ -7,8 +7,6 @@ const ducks = []
 
 function DuckCard({ duck }) {
   const [isFlipped, setIsFlipped] = useState(false);
-  // const [errors, setErrors] = useState(0);
-
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -19,7 +17,6 @@ function DuckCard({ duck }) {
 
       if (name1 !== name2) {
         console.log("Les cartes sont différentes");
-        //error();
       } else {
         console.log("Les cartes sont les mêmes");
 
