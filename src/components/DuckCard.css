@@ -1,21 +1,28 @@
 .card {
-  width: 100px;
-  height: 100px;
-  perspective: 1000px;
-  border: 1px solid var(--border);
   border-radius: 10px;
+  position: relative;
+  height: 170px;
+  width: 170px;
+  margin: 2% 0;
 }
 
 .cardFace {
-  width: 100%;
-  height: 100%;
+  min-height: 170px;
+  min-width: 170px;
   position: absolute;
   backface-visibility: hidden;
   transition: transform 0.5s;
+  background-color: var(--Foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .cardFace img {
-  width: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
 }
 
 .backFace {
@@ -28,4 +35,47 @@
 
 .card.flipped .backFace {
   transform: rotateY(0deg);
+}
+
+.erreurs {
+  color: var(--Foreground)
+}
+
+
+@media screen and (max-width:600px) {
+
+  .card {
+    height: 150px;
+    width: 150px;
+  }
+
+  .cardFace {
+    min-height: 150px;
+    min-width: 150px;
+
+  }
+
+  .cardFace img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  .card {
+    height: 115px;
+    width: 115px;
+  }
+
+  .cardFace {
+    min-height: 115px;
+    min-width: 115px;
+
+  }
+
+  .cardFace img {
+    width: 110px;
+    height: 110px;
+  }
 }

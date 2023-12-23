@@ -1,28 +1,44 @@
+
 import { useState } from "react";
 import "./DuckCard.css";
-import duckPictures from "../duckPicsData";
+import CyberQuack from "../assets/CyberQuack.png";
 
-function DuckCard({ frontImage, backImage }) {
+const ducks = []
+
+function DuckCard({ duck }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
+    ducks.push(duck.name);
+
+    if (ducks.length === 2) {
+      const [name1, name2] = ducks;
+
+      if (name1 !== name2) {
+        console.log("Les cartes sont différentes");
+      } else {
+        console.log("Les cartes sont les mêmes");
+
+        // Supprimer les éléments correspondant à name1 et name2
+        const elementsToRemove = document.querySelectorAll(`.backFace[data-name="${name1}"], .backFace[data-name="${name2}"]`);
+
+        elementsToRemove.forEach(element => element.remove());
+      }
+
+      ducks.length = 0;
+    }
   };
-  console.log(duckPictures[0].imgSrc);
+
+
   return (
     <>
-      <div className="card" onClick={handleFlip}>
-        <div
-          //   Face avant contenant le logo.
-          className={`cardFace ${isFlipped ? "backFace" : "frontFace"}`}
-        >
-          <img src={duckPictures[0].imgSrc} alt={frontImage.name} />
+      <div className={`card ${isFlipped ? "flipped" : ""}`} onClick={handleFlip}>
+        <div className="cardFace frontFace">
+          <img src={CyberQuack} alt={duck.name} />
         </div>
-        <div
-          //   Face arrière contenant le canard.
-          className={`cardFace ${isFlipped ? "frontFace" : "backFace"}`}
-        >
-          <img src={duckPictures[1].imgSrc} alt={backImage.name} />
+        <div className="cardFace backFace">
+          <img src={duck.imgSrc} alt={duck.name} />
         </div>
       </div>
     </>

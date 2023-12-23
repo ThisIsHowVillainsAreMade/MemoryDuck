@@ -1,0 +1,23 @@
+#duckContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 1%;
+  margin: 5% auto;
+  height: 100%;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.NbrError {
+  color: var(--Foreground);
+}
+
+
+@media screen and (max-width:700px) {
+
+  #duckContainer {
+    width: 100%;
+  }
+}

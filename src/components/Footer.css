@@ -1,0 +1,11 @@
+.duckSociety {
+  background-color: var(--Selection);
+  color: var(--Foreground);
+  font-size: 1.5rem;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
